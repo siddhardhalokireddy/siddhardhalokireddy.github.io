@@ -3,10 +3,14 @@ layout: page
 title: Music
 ---
 
-<img src="/assets/images/music.jpg" class="section-cover">
-
-{% for post in site.categories.music %}
-<div class="post-card">
-  <a href="{{ post.url }}">{{ post.title }}</a>
+<div class="section-hero" style="background-image: url('/assets/images/music.jpg')">
+  <h1>Music</h1>
 </div>
-{% endfor %}
+
+<div class="section-content">
+  {% for post in site.categories.music %}
+    <div class="post-card">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </div>
+  {% endfor %}
+</div>

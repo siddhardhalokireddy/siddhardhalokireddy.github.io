@@ -188,3 +188,89 @@ body {
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
 }
+
+/*Make each section page full with image, even with one post  */
+.section-hero {
+  height: 70vh; /* covers most of the screen */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 3rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+.section-hero h1 {
+  color: white;
+  font-size: 3rem;
+  background: rgba(0,0,0,0.4);
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+}
+
+.section-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+/* */
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* hide checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* side menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 280px;
+  height: 100vh;
+  background: #ffffff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  box-shadow: -4px 0 20px rgba(0,0,0,0.15);
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+#menu-toggle:checked + .menu-icon + .side-menu {
+  right: 0;
+}
+
+.side-menu a {
+  text-decoration: none;
+  color: #111;
+  font-size: 1.1rem;
+}
+
+.side-menu details summary {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.menu-social {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
