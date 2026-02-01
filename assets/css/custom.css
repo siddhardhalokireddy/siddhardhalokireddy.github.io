@@ -138,11 +138,8 @@ h1, h2, h3 {
   display: none;
 }
 
-/* ===============================
-   SHOW SOCIAL ICONS ONLY ON HOME + BIO
-================================ */
-.home .footer-social,
-.page-bio .footer-social {
+/* Show social icons ONLY on homepage */
+body[data-page-url="/"] .footer-social {
   display: block;
   margin-bottom: 1rem;
 }
