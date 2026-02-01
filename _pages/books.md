@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Books
+nav_order: 2
 ---
 
 <div class="section-hero" style="background-image: url('/assets/images/books.jpg')">

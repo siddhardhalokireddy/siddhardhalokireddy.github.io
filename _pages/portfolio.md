@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Portfolio
+nav_order: 1
 ---
 
 ## About Me

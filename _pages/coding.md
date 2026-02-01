@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Coding
+nav_order: 3
 ---
 
 <img src="/assets/images/coding.jpg" class="section-cover">

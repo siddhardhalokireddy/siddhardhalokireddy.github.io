@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Cinema
+nav_order: 5
 ---
 
 <img src="/assets/images/cinema.jpg" class="section-cover">
