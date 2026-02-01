@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="hero">
+  <div class="hero-text">
+    <h1>Hello, I’m Siddhardh.</h1>
+    <p>
+      I’m someone who enjoys learning, observing, and expressing ideas.
+      This is a personal space where I think in public — across music,
+      cinema, coding, and whatever I’m curious about next.
+    </p>
+  </div>
+
+  <div class="hero-image">
+    <img src="/assets/images/profile.jpg" alt="Profile photo">
+  </div>
+</div>
+
+<hr>
+
+<h2>Recent writing</h2>
+
+<ul class="post-list">
+  {% for post in site.posts limit:5 %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <span class="post-meta">{{ post.date | date: "%b %d, %Y" }}</span>
+    </li>
+  {% endfor %}
+</ul>
