@@ -48,55 +48,12 @@ body {
   }
 }
 
-/* code for Hamburger Menu */
-.site-header {
-  border-bottom: 1px solid #eaeaea;
-  padding: 1rem 0;
-}
-
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.site-title {
-  font-weight: 700;
-  text-decoration: none;
-  color: #000;
-}
-
-.site-nav {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.site-nav a {
-  text-decoration: none;
-  color: #333;
-}
-
-/* #nav-toggle {
-  display: none;
-} */
-
-#nav-toggle {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.nav-toggle-label {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-}
 
 /* Mobile */
 @media (max-width: 768px) {
-  .nav-toggle-label {
+  /* .nav-toggle-label {
     display: block;
-  }
+  } */
 
   .site-nav {
     display: none;
@@ -109,31 +66,38 @@ body {
     border: 1px solid #ddd;
   }
 
-  #nav-toggle:checked + .nav-toggle-label + .site-nav {
+  /* #nav-toggle:checked + .nav-toggle-label + .site-nav {
     display: flex;
-  }
+  } */
 }
 
 
 /* Code for Footer Styling */
 .site-footer {
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #eee;
   margin-top: 4rem;
   padding: 2rem 0;
-  font-size: 0.9rem;
 }
 
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+.footer-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.social-links a {
-  margin-left: 1rem;
-  text-decoration: none;
-  color: #333;
+.footer-social {
+  margin-bottom: 1rem;
+}
+
+.footer-social img {
+  width: 22px;
+  height: 22px;
+  margin: 0 0.5rem;
+  opacity: 0.7;
+}
+
+.footer-social img:hover {
+  opacity: 1;
 }
 
 /* Social Media Icons (svg Formats) */
@@ -225,52 +189,5 @@ h1, h2, h3 {
   padding: 1rem;
 }
 
-.menu-icon {
-  font-size: 2rem;
-  cursor: pointer;
-}
 
-/* hide checkbox */
-#menu-toggle {
-  display: none;
-}
 
-/* side menu */
-.side-menu {
-  position: fixed;
-  top: 0;
-  right: -300px;
-  width: 280px;
-  height: 100vh;
-  background: #ffffff;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  box-shadow: -4px 0 20px rgba(0,0,0,0.15);
-  transition: right 0.3s ease;
-  z-index: 1000;
-}
-
-#menu-toggle:checked + .menu-icon + .side-menu {
-  right: 0;
-}
-
-.side-menu a {
-  text-decoration: none;
-  color: #111;
-  font-size: 1.1rem;
-}
-
-.side-menu details summary {
-  cursor: pointer;
-  font-weight: 500;
-}
-
-.menu-social {
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
