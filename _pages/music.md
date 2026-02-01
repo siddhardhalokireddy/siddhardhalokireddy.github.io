@@ -8,9 +8,17 @@ title: Music
 </div>
 
 <div class="section-content">
-  {% for post in site.categories.music %}
-    <div class="post-card">
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </div>
-  {% endfor %}
+{% for post in site.categories.music %}
+<div class="post-card">
+
+  {% if post.image %}
+    <img src="{{ post.image }}" class="post-card-image" alt="{{ post.title }}">
+  {% endif %}
+
+  <div class="post-card-content">
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </div>
+
+</div>
+{% endfor %}
 </div>

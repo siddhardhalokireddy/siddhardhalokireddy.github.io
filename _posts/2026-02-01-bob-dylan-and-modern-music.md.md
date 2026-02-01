@@ -2,6 +2,7 @@
 title: "Bob Dylan and the Shape of Modern Music"
 categories: [music]
 tags: [art, lyrics, culture]
+image: /assets/images/bob-dylan_image.jpg
 ---
 
 Few artists have reshaped modern music as profoundly as Bob Dylan. More than a singer or songwriter, Dylan is a chronicler of human experience—restless, questioning, and often unsettling. His music refuses to stay still, just as his ideas refuse easy answers.
