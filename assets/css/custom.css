@@ -1,9 +1,18 @@
-/* Background */
+/* ===============================
+   GLOBAL
+================================ */
 body {
   background: #fafafa;
+  font-family: 'Inter', system-ui, sans-serif;
 }
 
-/* Hero section */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* ===============================
+   HERO (HOME PAGE)
+================================ */
 .hero {
   display: flex;
   gap: 3rem;
@@ -40,7 +49,6 @@ body {
   object-fit: cover;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column-reverse;
@@ -48,114 +56,11 @@ body {
   }
 }
 
-
-/* Mobile */
-@media (max-width: 768px) {
-  /* .nav-toggle-label {
-    display: block;
-  } */
-
-  .site-nav {
-    display: none;
-    flex-direction: column;
-    background: #fff;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    padding: 1rem;
-    border: 1px solid #ddd;
-  }
-
-  /* #nav-toggle:checked + .nav-toggle-label + .site-nav {
-    display: flex;
-  } */
-}
-
-
-/* Code for Footer Styling */
-.site-footer {
-  border-top: 1px solid #eee;
-  margin-top: 4rem;
-  padding: 2rem 0;
-}
-
-.footer-inner {
-  max-width: 960px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.footer-social {
-  margin-bottom: 1rem;
-}
-
-.footer-social img {
-  width: 22px;
-  height: 22px;
-  margin: 0 0.5rem;
-  opacity: 0.7;
-}
-
-.footer-social img:hover {
-  opacity: 1;
-}
-
-/* Social Media Icons (svg Formats) */
-.social-links img {
-  width: 20px;
-  height: 20px;
-  margin-left: 1rem;
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
-}
-
-.social-links img:hover {
-  opacity: 1;
-}
-
-
-/* Style section covers + cards */
-.section-cover {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 2rem;
-}
-
-.post-card {
-  padding: 1.5rem;
-  margin-bottom: 1rem;
-  background: #fff;
-  border-radius: 8px;
-  border: 1px solid #eee;
-}
-
-.post-card a {
-  text-decoration: none;
-  font-size: 1.1rem;
-  color: #111;
-}
-
-/* single-post layout */
-.post-card:only-child {
-  font-size: 1.3rem;
-  padding: 3rem;
-  text-align: center;
-}
-
-/* Apply fonts */
-body {
-  font-family: 'Inter', system-ui, sans-serif;
-}
-
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-}
-
-/*Make each section page full with image, even with one post  */
+/* ===============================
+   SECTION HERO (Music / Cinema / Coding / Books)
+================================ */
 .section-hero {
-  height: 70vh; /* covers most of the screen */
+  height: 70vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -178,16 +83,65 @@ h1, h2, h3 {
   margin: 0 auto;
 }
 
-
-/* */
-.header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1rem;
+/* ===============================
+   POSTS
+================================ */
+.post-card {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #eee;
 }
 
+.post-card a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #111;
+}
 
+.post-card:only-child {
+  font-size: 1.3rem;
+  padding: 3rem;
+  text-align: center;
+}
 
+/* ===============================
+   FOOTER (DEFAULT: HIDDEN ICONS)
+================================ */
+.site-footer {
+  border-top: 1px solid #eee;
+  margin-top: 4rem;
+  padding: 2rem 0;
+}
+
+.footer-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Hide social icons everywhere by default */
+.footer-social {
+  display: none;
+}
+
+/* ===============================
+   SHOW SOCIAL ICONS ONLY ON HOME + BIO
+================================ */
+.home .footer-social,
+.page-bio .footer-social {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.footer-social img {
+  width: 22px;
+  height: 22px;
+  margin: 0 0.5rem;
+  opacity: 0.7;
+}
+
+.footer-social img:hover {
+  opacity: 1;
+}
