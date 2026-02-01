@@ -6,9 +6,9 @@ body {
 /* Hero section */
 .hero {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   align-items: center;
-  margin: 3rem 0;
+  margin: 4rem 0;
 }
 
 .hero-text {
@@ -16,24 +16,26 @@ body {
 }
 
 .hero-text h1 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
 }
 
-.hero-text p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #444;
+.hero-bio {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+  color: #333;
 }
 
 .hero-image {
   flex: 1;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-image img {
-  width: 180px;
-  height: 180px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -45,3 +47,86 @@ body {
     text-align: center;
   }
 }
+
+/* code for Hamburger Menu */
+.site-header {
+  border-bottom: 1px solid #eaeaea;
+  padding: 1rem 0;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-title {
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-toggle-label {
+    display: block;
+  }
+
+  .site-nav {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+  }
+
+  #nav-toggle:checked + .nav-toggle-label + .site-nav {
+    display: flex;
+  }
+}
+
+
+/* Code for Footer Styling */
+.site-footer {
+  border-top: 1px solid #eaeaea;
+  margin-top: 4rem;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #333;
+}
+
