@@ -1,0 +1,16 @@
+title: Siddhardha Lokireddy
+description: Thinking in public, learning through curiosity, and expressing ideas along the way.
+theme: minima
+markdown: kramdown
+
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
